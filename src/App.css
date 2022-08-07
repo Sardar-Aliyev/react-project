@@ -1,0 +1,24 @@
+:root {
+    --ag-reng: #fff;
+    --qara-reng: #2c3e50;
+    --boz-reng: #ddd;
+}
+img {
+    width: 3.3rem;
+    height: 3.2rem;
+}
+
+/* navbarin kodlari */
+
+nav a.nav-link {
+    color: var(--ag-reng);
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+.navbar-nav > li> a.active, 
+.navbar-nav > li> a:hover ,
+.navbar-nav > li> a:focus { 
+ border-bottom: 2px solid lightskyblue;
+ color: var(--boz-reng);
+}
