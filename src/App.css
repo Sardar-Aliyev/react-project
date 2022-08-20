@@ -1,7 +1,20 @@
+
 :root {
-    --ag-reng: #fff;
-    --qara-reng: #2c3e50;
-    --boz-reng: #ddd;
+    --primary-white: #fff;
+    --primary-light-grey: #f4f4f4;
+    --primary-grey:#ccd1d9;
+    --primary-dark-grey: #666;
+    --primary-orange: #f9ab00;
+    --primary-dark: rgb(52,58,64);
+    --primary-red: #ef4035;
+    --primary-hover-red: #f33501;
+    --primary-black:#000;
+    --primary-transparent-black: rgba(0,0,0,0.7);
+    --primary-green: rgb(0,255,0);
+
+}
+body {
+    min-height: 100vh;
 }
 img {
     width: 3.3rem;
@@ -11,7 +24,7 @@ img {
 /* navbarin kodlari */
 
 nav a.nav-link {
-    color: var(--ag-reng);
+    color: var(--primary-white);
     font-size: 1.2rem;
     font-weight: 400;
 
@@ -20,5 +33,129 @@ nav a.nav-link {
 .navbar-nav > li> a:hover ,
 .navbar-nav > li> a:focus { 
  border-bottom: 2px solid lightskyblue;
- color: var(--boz-reng);
+ color: var(--primary-grey);
+}
+
+/* header */
+.container-wrapper {
+    height: 100vh;
+    color: aliceblue;
+}
+.main-info {
+    height: 100%;
+}
+.text-type {
+    font-size: 1.5rem;
+} 
+.mycv  {
+font-size: 1.4rem;
+text-decoration: none;
+transform: translateY(100px);
+
+}
+
+/* aboutme */
+
+.photo-wrap {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.profile-img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 2px solid lightcoral;
+    padding: .3rem;
+    object-fit: cover;
+}
+
+.profile-img:hover {
+    padding: 1rem;
+}
+.about-heading {
+    color: rgb(12, 34, 12);
+    text-transform: uppercase;
+}
+
+@media(max-width:990px) {
+    .about-heading {
+        text-align: center;
+    }
+    .text-about {
+        text-align: center;
+    }
+}
+
+
+
+
+/* contact us komponenti stil */
+
+.contacts {
+    background-color: var(--primary-dark);
+    padding:3rem 0;
+}
+
+.contacts h1 {
+    color: var(--primary-hover-red);
+    padding-left: 1.3rem 0;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    color: var(--primary-light-grey);
+    font-size: 1.2rem;
+}
+
+/*  contacts input */
+
+.contacts input, .contacts textarea {
+    background:none;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    color: var(--primary-hover-red);
+    outline: none !important;
+}
+
+.contacts input:focus, .contacts textarea:focus{
+    background:transparent;
+    border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+    height: 12.2rem !important;
+}
+
+.contact-btn {
+    margin: 1rem 0 0 0;
+}
+
+.btn-main-offer {
+    border: 1px solid var(--primary-red);
+    margin: 2rem;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color:var(--primary-white);
+    background:none;
+
+}
+
+.btn-main-offer:hover {
+    background-color: var(--primary-hover-red);
+    transition: 1s ease-in-out;
+}
+
+.line {
+    position: relative;
+    top: -0.7rem;
+    width: 0;
+    height: 0.125rem;
+    background-color: var(--primary-orange);
+    display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+    width: 100%;
+    transition: width .5s ease-in-out;
 }
